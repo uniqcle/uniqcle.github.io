@@ -1,0 +1,94 @@
+.button{
+    display: inline-block; 
+    border-radius: 29px;
+    font-weight: 700; 
+    line-height: 1; 
+    transition: background-color 0.5s ease-in; 
+
+    &:hover{
+        background-color: $accent-hover; 
+    }
+}
+
+.button__subscribe{
+    @include button($accent, $color-font, $height, 158px); 
+    padding-left: 28px; 
+    padding-right: 37px; 
+    
+}
+
+.object__button{
+    @include button($accent, $color-font, $height, $width);
+    padding-top: 20px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+
+}
+
+.cta__button{
+    @include button($accent, $color-font, $height, $width);
+    padding-top: 22px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+    
+    &--white{
+        @include button(#fff, $color-font, $height, $width);
+        color: #323232; 
+        padding-top: 18px; 
+        padding-bottom: 16px; 
+        padding-left: 30px; 
+        padding-right: 30px;
+        transition: color 0.2s easy-in; 
+
+        &:hover{
+            color: #fff; 
+        }
+    }
+
+    &--play{
+        padding-left: 44px; 
+        position: relative; 
+
+        &::before{
+            content: ""; 
+            display: block; 
+            width: 12px; 
+            height: 12px; 
+            position: absolute; 
+            left: 22px; 
+            top: 23px; 
+            background-image: url('../img/dashboard/play.svg'); 
+            background-repeat: no-repeat; 
+        }
+    }
+
+ 
+}
+
+.button__serve{
+    @include button($accent, $color-font, $height, $width);
+
+    padding-top: 20px; 
+    padding-bottom: 16px; 
+    padding-left: 51px; 
+    padding-right: 40px;
+
+    &:hover{
+        @include button(#fff, $accent-hover, $height, $width);
+    }
+}
+
+.button__expert{
+    @include button(#fff, #323232, $height, $width);
+
+    padding-top: 22px; 
+    padding-bottom: 16px; 
+    padding-left: 40px; 
+    padding-right: 40px;
+
+    &:hover{
+        @include button($accent, #fff, $height, $width);
+    }
+}

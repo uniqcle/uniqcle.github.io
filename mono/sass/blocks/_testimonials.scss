@@ -1,0 +1,146 @@
+.testimonials {
+    padding-top: 60px; 
+    padding-bottom: 60px; 
+   
+}
+
+.testimonials__heading {
+    margin-bottom: 60px; 
+
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.testimonials__title {
+   max-width: 453px; 
+}
+
+.testimonials__subtitle {
+    max-width: 400px; 
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+
+    letter-spacing: 1.15px;
+
+    color: #606060;
+}
+
+.testimonials_row {
+    display: flex; 
+    flex-direction: row;
+    column-gap: 30px; 
+    position: relative; 
+
+    &::after{
+        position: absolute; 
+        top: -10%; 
+        right: -4%; 
+        content: ""; 
+        width: 80px; 
+        height: 80px; 
+        background-image: url('../img/icons/shape.svg');
+    }
+}
+
+.testimonials__card {
+
+    max-width: 350px; 
+    border-radius: 5px; 
+    overflow: hidden;
+    transition: all 0.2s ease-in; 
+
+    &:hover{
+        box-shadow: 0px 10px 52px rgba(0, 0, 0, 0.08);
+
+       
+        .testimonials__play-btn{
+            transform: translateY(0%); 
+            opacity: 1; 
+        }
+    }
+
+}
+
+
+.testimonials_img-wrapper{
+    position: relative; 
+
+    .testimonials__play-btn{
+        position: absolute; 
+        top: 10px; 
+        right: 10px; 
+    }
+}
+
+.testimonials__play-btn{
+    fill: #F78434; 
+    transform: translateY(-50%); 
+    opacity: 0; 
+
+    circle{
+        fill: #fff; 
+    }
+
+    &:hover{
+        fill: #323232;
+
+    }
+
+
+}
+
+
+.testimonials__body{
+    padding: 30px; 
+
+    p{
+        max-width: 292px; 
+    }
+}
+
+.testimonials__card-desc {
+    padding-bottom: 20px; 
+}
+
+.testimonials__card-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.6px;
+    color: #323232;
+
+}
+
+.testimonials__card-location {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    letter-spacing: 1.15px;
+    color: #58BEBF;
+
+    .testimonials__card:hover & {
+        color: #F78434; 
+    }
+}
+
+@media (max-width: 820px){
+    .testimonials__card-desc{
+        display: none; 
+    }
+}
+
+@media (max-width: 764px){
+    .testimonials{
+        padding-bottom: 0; 
+
+    }
+    
+    .testimonials__title{
+        display: none; 
+    }
+}

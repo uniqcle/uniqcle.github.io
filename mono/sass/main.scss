@@ -1,0 +1,27 @@
+/* base */ 
+@import './base/vars'; 
+@import './base/reset'; 
+@import './base/base'; 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './base/mixins.scss'; 
+
+/* blocks */ 
+@import './blocks/nav';
+@import './blocks/logo'; 
+@import './blocks/navigation-list'; 
+@import './blocks/header'; 
+@import './blocks/form'; 
+@import './blocks/button'; 
+@import './blocks/clients'; 
+@import './blocks/objects'; 
+@import './blocks/title'; 
+@import './blocks/card-info'; 
+@import './blocks/cta'; 
+@import './blocks/serve'; 
+@import './blocks/benefits'; 
+@import './blocks/testimonials'; 
+@import './blocks/expert'; 
+@import './blocks/footer'; 
+@import './blocks/mobilenavicon'; 
+@import './blocks/mobile.scss'; 
+

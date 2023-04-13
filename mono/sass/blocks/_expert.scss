@@ -1,0 +1,64 @@
+.expert {
+    padding-top: 200px; 
+    padding-bottom: 50px;
+    color: #fff; 
+    background-image: url('../img/expert/fon.svg'); 
+    background-size: cover; 
+
+    position: relative; 
+
+    &:before{
+        position: absolute; 
+        bottom: 0; 
+        left: 50%; 
+        content: ""; 
+        display: block; 
+        width: 743px; 
+        height: 372px; 
+        background-image: url('../img/expert/oval.svg'); 
+        background-repeat: no-repeat; 
+        background-size: initial; 
+    }
+
+    &:after{
+        position: absolute; 
+        bottom: 0; 
+        left: 59%; 
+        content: ""; 
+        display: block; 
+        width: 478px; 
+        height: 547px; 
+        background-image: url('../img/expert/girl.png'); 
+        background-repeat: no-repeat; 
+        background-size: initial; 
+
+    }
+}
+ 
+.expert-info {
+}
+
+.expert__title{
+    max-width: 359px;
+    margin-bottom: 15px;
+
+    h2{
+        color: #fff; 
+    }
+}
+
+.expert__text{
+    max-width: 342px; 
+    margin-bottom: 30px;
+}
+
+.button {
+}
+
+
+@media (max-width: 990px){
+    .expert{
+        display: none; 
+    }
+
+}
