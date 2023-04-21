@@ -1,0 +1,108 @@
+.card-link{
+    display: inline-block; 
+    transition: opacity 0.2s ease-in, box-shadow 0.2s ease-in; 
+    margin-bottom: 30px; 
+}
+
+.card-link:hover{
+    opacity: 0.8; 
+    box-shadow: 0 3px 3px 0 #34495e; 
+    transform: translateY(-5px); 
+}
+
+.card {
+    width: 270px; 
+    background-color: #fff; 
+    color: #000000;
+
+    position: relative; 
+    
+}
+
+.card__img {
+}
+
+.card__content {
+    padding: 15px 15px 20px; 
+}
+
+.card__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    
+    margin-bottom: 10px; 
+}
+
+.card__term {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px; 
+}
+
+.card__metro {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 10px; 
+
+    padding-left: 26px; 
+
+    position: relative; 
+    
+    &::before{
+        position: absolute; 
+        top: 2px; 
+        left: 0; 
+        content: ''; 
+        width: 16px; 
+        height: 11px; 
+        background-image: url('../imgs/icons/metro.svg'); 
+        background-size: initial; 
+        background-repeat: no-repeat; 
+    }
+}
+
+.card__address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    color: #777777;
+}
+
+
+/* badges */ 
+
+.card__badges {
+    position: absolute; 
+    top: 10px; 
+    left: 15px; 
+    
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 20px; 
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.16;
+}
+
+.card__badge--orange {
+    padding: 3px 10px; 
+    background-color: #FFCF26; 
+    border-radius: 4px; 
+}
+
+.card__badge--green {
+    background-color: #11BE75; 
+    padding: 3px 10px; 
+    border-radius: 4px;
+    color: #fff; 
+}
+
+.cards-link--hidden{
+    display: none; 
+}
